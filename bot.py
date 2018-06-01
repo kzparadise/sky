@@ -24,7 +24,7 @@ while True:
             link = 'https://m.kolesa.kz/a/show/' + str(urls)
             cursor.execute("INSERT INTO cars VALUES(?)", [str(urls)])
             conn.commit()    
-            r = requests.post('https://api.telegram.org/bot589971674:AAEm1J2O5QPVL7J0A4p6mChfSWlFfpl0VCQ/sendMessage?chat_id=548542772&text=' + title  + '%0A' + gorod + '%0A' + procent + '%0A' + link) 
+            r = requests.post('https://api.telegram.org/bot318428525:AAEm1J2O5QPVL7J0A4p6mChfSWlFfpl0VCQ/sendMessage?chat_id=548542772&text=' + title  + '%0A' + gorod + '%0A' + procent + '%0A' + link) 
         else:
             continue
     conn.close()
